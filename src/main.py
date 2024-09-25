@@ -8,9 +8,9 @@ if __name__ == '__main__':
 
     years = [2019, 2020, 2021, 2022, 2023, 2024]
 
-    # # Takes about 10 seconds using API. For speed, comment this out and just load it as a csv once you've run it once
-    # stats = get_player_stats(years=years)
-    # stats.to_csv("../data/stats.csv", index=False)
+    # Takes about 10 seconds using API. For speed, comment this out and just load it as a csv once you've run it once
+    stats = get_player_stats(years=years)
+    stats.to_csv("../data/stats.csv", index=False)
 
     stats = pd.read_csv("../data/stats.csv")
 
